@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="add_me()">Add ME</button>
+    <button onclick="show_me()">Show me</button>
+    <button onclick="delete_me()">Delete me</button>
+    
+    <script>
+        /*
+         let array =prompt("Enter name...")
+  let name1 =["ukpono", "Happi", "Emma"]
+
+  if (name1.includes(array)){
+    console.log("Successfully found")
+  }else{
+    console.log("Not found")
+  }
+
+*/
+   let name =[]
+   function add_me(){
+    let name1 = prompt("Enter me")
+    name.push(name1)
+   }
+  function show_me (){ 
+     
+    if (name.length != 0 ){
+    alert(name)
+    }else{
+        alert("Add a name")
+    }
+  
+  }
+ function delete_me(){
+    if (name.length != 0){
+        name.pop()
+ alert ("successfully deleted")
+    }else{
+        alert("The is no Name to delete")
+    }
+ }
+ /* 
+ 
+ let array =[]
+ let name2 =prompt("Enter name")
+ array.push(name2)
+ let name3 =prompt("Enter name")
+ array.push(name3)
+ let name4 =prompt("Enter name")
+ array.push(name4)
+
+ for (let i=0; i<name.length; i++){
+    console.log(name[i])
+ }
+ */
+
+ let age = [2,4,6,8,10]
+ let age1 =
+ age.map(mymap)
+ console.log(age1)
+
+ function mymap(value,index,array){
+  return value * 2; 
+ }
+
+ 
+    </script>
+</body>
+</html>
